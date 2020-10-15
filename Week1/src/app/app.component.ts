@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Content } from "./helper-files/content-interface";
+import { ContentListComponent } from "./content-list/content-list.component";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'learning-angular';
+   @Input() thing: Content;
+  @Input()thingList: ContentListComponent[];
+
 }

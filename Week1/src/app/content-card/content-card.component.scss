@@ -1,0 +1,19 @@
+:host{
+  width: 400px;
+  display: block;
+  margin: 24px auto;
+  border: 3px dashed #000000;
+}
+:host.is-first{
+  background-color:#ff0000;
+}
+.title{
+  font-size: 20px;
+  text-align: center;
+}
+.main-image{
+  width: 400px;
+}
+.special{
+  color:#ff0000;
+}

@@ -7,3 +7,7 @@ export interface Content{
   body: string;
   tags?: string[];
 }
+
+export interface ContentList{
+  contents: Content[];
+}
