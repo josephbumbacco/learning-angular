@@ -14,6 +14,7 @@ export class ContentCardComponent implements OnInit {
 
   @Input() thing: Content;
   htmlString: String;
+  output: string;
 
 
   constructor() {

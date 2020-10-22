@@ -1,6 +1,9 @@
-<div class="content-{{ thing.id }}">
-  <img class="main-image" src="{{ thing.imgUrl }}">
-  <h1 class="title">Title: {{ thing.title }}</h1>
-  <div class="body" *ngIf="thing.body">Description: {{ thing.body }}</div>
-  <div class="type">Type: {{ thing.type }}</div>
-</div>
+
+<!--<div class="content-{{ thing.id }}">-->
+<!--  <img class="main-image" src="{{ thing.imgUrl }}">-->
+<!--  <h1 class="title">Title: {{ thing.title }}</h1>-->
+<!--  <div class="body" *ngIf="thing.body">Description: {{ thing.body }}</div>-->
+<!--  <div class="type">Type: {{ thing.type }}</div>-->
+<!--</div>-->
+
+<span [innerHTML]="output"></span>

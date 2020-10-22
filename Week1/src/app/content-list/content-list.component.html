@@ -1,4 +1,40 @@
-<app-content-card *ngFor="let singleThing of thingList; index as i; first as isFirst" [thing]="singleThing"
-                  class="content-card-{{i}}" [class.is-first]="isFirst">
-</app-content-card>
 
+<h2>yo</h2>
+<input #contentTitle value="Default Value">
+<button (click)="input(contentTitle.value)">Click this button PLEASE</button>
+
+
+
+
+
+<div class="ideas" *ngFor="let content of (listContent | filterPipe: 'Ideas') ;
+ let end = end"
+     [ngClass]="{'last-child': end}">
+  <ul title="Items">
+    <li>
+      <h1>{{content.title}}</h1>
+      <h2>{{content.author}}</h2>
+      <p>{{content.body}}</p>
+      <p>Tags: {{content.tags}}</p>
+      <p>Type: {{content.type}}</p>
+      <br>
+      <img src={{content.imgUrl}} width="250" height="250" (click)="this.printInfo(content)"/>
+    </li>
+  </ul>
+</div>
+
+<div class="inovations" *ngFor="let content of (listContent | filterPipe: 'Innovations') ;
+ let end = end"
+     [ngClass]="{'last-child': end}">
+  <ul title="Items">
+    <li>
+      <h1>{{content.title}}</h1>
+      <h2>{{content.author}}</h2>
+      <p>{{content.body}}</p>
+      <p>Tags: {{content.tags}}</p>
+      <p>Type: {{content.type}}</p>
+      <br>
+      <img src={{content.imgUrl}} width="250" height="250" (click)="this.printInfo(content)"/>
+    </li>
+  </ul>
+</div>
