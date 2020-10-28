@@ -18,16 +18,16 @@ export class ContentListComponent implements OnInit {
               imgUrl: 'https://az601583.vo.msecnd.net/app-content/posts/106/2020/06/13/inspirehub-fb8edc4ff85f4906992b7fa31341bd04-jpg_1600x900_01_06_05_5949.jpg',
               body: 'This is the Body of Idea Number 1',
               type: 'Innovations',
-              tags: ['Info 1']
+              tags: ['Info 1', 'Hello']
                };
           content2: Content = {
             id: 1,
             title: 'Idea #2',
             author: 'Joe B',
-            imgUrl: 'https://az601583.vo.msecnd.net/app-content/posts/106/2020/06/13/inspirehub-fb8edc4ff85f4906992b7fa31341bd04-jpg_1600x900_01_06_05_5949.jpg',
+            imgUrl: '',
             body: 'This is the Body of Idea Number 2',
             type: 'Ideas',
-            tags: ['Info 2']
+            tags: ['Info 2', 'John']
                };
         content3: Content =     {
                id: 2,
@@ -36,7 +36,7 @@ export class ContentListComponent implements OnInit {
                title: 'Information 3',
                body: 'This is Information 3',
                 type: 'Ideas',
-               tags: ['Info 3']
+               tags: ['Info 3', 'Mark']
              };
         content4: Content =    {
                id: 3,
@@ -45,16 +45,16 @@ export class ContentListComponent implements OnInit {
                title: 'Information 4',
                body: 'This is Information 4',
                 type: 'Innovations',
-               tags: ['Info 4']
+               tags: ['Info 4', 'Caroll']
              };
         content5: Content =    {
                id: 4,
                author: 'Joe B',
-               imgUrl: 'https://az601583.vo.msecnd.net/app-content/posts/106/2020/06/13/inspirehub-fb8edc4ff85f4906992b7fa31341bd04-jpg_1600x900_01_06_05_5949.jpg',
+               imgUrl: '',
                title: 'Information 5',
                body: 'This is Information 5',
                 type: 'Innovations',
-               tags: ['Info 5']
+               tags: ['Info 5', 'Mark2']
              };
 constructor() {
   this.listContent.push(this.content1, this.content2, this.content3, this.content4, this.content5)

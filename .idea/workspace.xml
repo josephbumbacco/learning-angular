@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="055e0091-bbeb-46f9-92d4-a8fa3fc5e581" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week1/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week1/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week1/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Week1/src/app/app.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Week1/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Week1/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week1/src/app/content-card/content-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week1/src/app/content-card/content-card.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week1/src/app/content-card/content-card.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Week1/src/app/content-card/content-card.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week1/src/app/content-card/content-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Week1/src/app/content-card/content-card.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Week1/src/app/content-list/content-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week1/src/app/content-list/content-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week1/src/app/content-list/content-list.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Week1/src/app/content-list/content-list.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Week1/src/app/content-list/content-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Week1/src/app/content-list/content-list.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +51,8 @@
       <workItem from="1602090929198" duration="10369000" />
       <workItem from="1602706461037" duration="9474000" />
       <workItem from="1602786589861" duration="819000" />
-      <workItem from="1603302156888" duration="9939000" />
+      <workItem from="1603302156888" duration="10709000" />
+      <workItem from="1603914036151" duration="4336000" />
     </task>
     <servers />
   </component>

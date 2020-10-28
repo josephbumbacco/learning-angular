@@ -12,13 +12,19 @@
      [ngClass]="{'last-child': end}">
   <ul title="Items">
     <li>
-      <h1>{{content.title}}</h1>
+      <h1 appHoverStyle >{{content.title}}</h1>
       <h2>{{content.author}}</h2>
       <p>{{content.body}}</p>
-      <p>Tags: {{content.tags}}</p>
+      <div *ngFor="let tag of content.tags" appHoverStyle>Tags: {{tag}}</div>
       <p>Type: {{content.type}}</p>
       <br>
-      <img src={{content.imgUrl}} width="250" height="250" (click)="this.printInfo(content)"/>
+
+      <div [ngSwitch] = "content.imgUrl === ''" >
+      <img *ngSwitchCase="false" src={{content.imgUrl}} width="250" height="250" (click)="this.printInfo(content)"/>
+      <img *ngSwitchDefault src= "https://vignette.wikia.nocookie.net/pingu/images/8/8e/Pingg_and_the_Pond.jpg/revision/latest/top-crop/width/360/height/450?cb=20111201004721" width="250" height="250" (click)="this.printInfo(content)"/>
+
+      </div>
+
     </li>
   </ul>
 </div>
@@ -31,10 +37,15 @@
       <h1>{{content.title}}</h1>
       <h2>{{content.author}}</h2>
       <p>{{content.body}}</p>
-      <p>Tags: {{content.tags}}</p>
+      <div *ngFor="let tag of content.tags">Tags: {{tag}}</div>
       <p>Type: {{content.type}}</p>
       <br>
-      <img src={{content.imgUrl}} width="250" height="250" (click)="this.printInfo(content)"/>
+
+      <div [ngSwitch] = "content.imgUrl === ''" >
+        <img *ngSwitchCase="false" src={{content.imgUrl}} width="250" height="250" (click)="this.printInfo(content)"/>
+        <img *ngSwitchDefault src= "https://vignette.wikia.nocookie.net/pingu/images/8/8e/Pingg_and_the_Pond.jpg/revision/latest/top-crop/width/360/height/450?cb=20111201004721" width="250" height="250" (click)="this.printInfo(content)"/>
+
+      </div>
     </li>
   </ul>
 </div>
