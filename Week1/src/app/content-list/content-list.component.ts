@@ -58,8 +58,38 @@ export class ContentListComponent implements OnInit {
              };
 constructor() {
   this.listContent.push(this.content1, this.content2, this.content3, this.content4, this.content5)
+
+
+
+
 }
 
+
+
+
+
+  addContentToList(newContentFromChild: Content): void {
+
+
+
+    const ourPromise = new Promise((success, fail) => {
+      if (newContentFromChild.title && newContentFromChild.id && newContentFromChild.author && newContentFromChild.type && newContentFromChild.imgUrl && newContentFromChild.body){
+        this.listContent.push(newContentFromChild);
+        this.listContent = Object.assign([], this.listContent)
+        success('It worked!');
+      }
+      else{
+        fail('it failed :(');
+      }
+    });
+    ourPromise.then((successResult: string) => {
+      console.log('Success! ', successResult);
+    }).catch((failResult: string) => console.log('Failure!: ', failResult));
+
+
+
+
+  }
 
   input(title: string): void {
     //this.listContent.forEach(content => content.title === title) {
